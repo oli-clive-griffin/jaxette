@@ -65,5 +65,3 @@ if __name__ == "__main__":
     params = [2., 3.]
     grads = forward(params, 5.)
     print(grads)
-
-
