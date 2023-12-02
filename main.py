@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from time import sleep
 import math
 
 def autocast_to_param(fn):
@@ -172,8 +173,7 @@ if __name__ == "__main__":
     for _ in range(1000):
         grads = model_grad(params, 1)
         params = update(params, grads)
-        print(params)    
-        from time import sleep
+        print(params)
         sleep(0.1)
 
 
